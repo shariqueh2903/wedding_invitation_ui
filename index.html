@@ -366,7 +366,7 @@
         text-align: center;
         font-size: 1.3rem;
         color: var(--primary);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-style: italic;
         opacity: 0.8;
       }
@@ -402,28 +402,28 @@
       .couple-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 5rem;
-        margin-top: 4rem;
+        gap: 1rem;
+        margin-top: 2rem;
         align-items: center;
       }
 
       .couple-image-container {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
       }
 
       .couple-image-container img {
-        max-width: 500px;
+        max-width: 350px;
         width: 100%;
         height: auto;
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(139, 30, 63, 0.3);
-        border: 3px solid var(--accent);
+        border-radius: 15px;
+        box-shadow: 0 15px 45px rgba(139, 30, 63, 0.3);
+        border: 2px solid var(--accent);
         transition: var(--transition);
       }
 
       .couple-image-container img:hover {
-        transform: scale(1.05);
+        transform: scale(0.5);
         box-shadow: 0 30px 80px rgba(139, 30, 63, 0.4);
       }
 
@@ -471,7 +471,7 @@
 
       .couple-icon {
         font-size: 5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         color: var(--primary);
         opacity: 0.8;
       }
@@ -501,7 +501,7 @@
         font-size: 1.5rem;
         color: var(--dark);
         line-height: 1.8;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
 
       .family-label {
@@ -522,8 +522,8 @@
       /* Welcome Section */
       .welcome-section {
         text-align: center;
-        margin-top: 5rem;
-        padding: 4rem 3rem;
+        margin-top: 1rem;
+        padding: 2rem 2rem;
         background: white;
         border-radius: 20px;
         border: 1px solid rgba(201, 169, 110, 0.3);
@@ -617,22 +617,28 @@
         position: relative;
         max-width: 900px;
         margin: 0 auto;
-        padding: 3rem 0;
+        padding: 1rem 0;
       }
 
       .timeline::before {
         content: "";
         position: absolute;
         left: 50%;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: var(--secondary);
+        top: 5%;
+        bottom: 10%;
+        width: 2px;
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          var(--secondary) 15%,
+          var(--secondary) 85%,
+          transparent 100%
+        );
         transform: translateX(-50%);
       }
 
       .timeline-item {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         position: relative;
       }
 
@@ -781,8 +787,8 @@
       .venue-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 4rem;
-        margin-top: 4rem;
+        gap: 1rem;
+        margin-top: 1rem;
       }
 
       .venue-card {
@@ -915,7 +921,7 @@
       }
 
       .map-container {
-        margin-top: 5rem;
+        margin-top: 1rem;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
@@ -924,7 +930,7 @@
 
       .map-container iframe {
         width: 100%;
-        height: 450px;
+        height: 350px;
         border: none;
       }
 
@@ -1200,6 +1206,10 @@
 
       /* Mobile Optimizations */
       @media screen and (max-width: 768px) {
+        .couple-image-container img {
+          max-width: 280px;
+          border-radius: 12px;
+        }
         /* Hero Section */
         .hero-content {
           padding: 0 15px;
@@ -1234,7 +1244,7 @@
         }
         .section-subtitle {
           font-size: 1.1rem;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
         }
         
         /* Countdown Section */
@@ -1256,7 +1266,7 @@
         
         /* Couple Cards */
         .couple-card {
-          padding: 1.5rem;
+          padding: 1rem;
           margin: 1rem 0;
         }
         .couple-name {
@@ -1267,9 +1277,12 @@
         }
         
         /* Timeline Events */
+        .timeline {
+          padding: 0.5rem 0;
+        }
         .timeline-content {
           padding: 1.2rem;
-          margin: 0.8rem 0;
+          margin: 0.5rem 0;
         }
         .event-title {
           font-size: 1.3rem;
@@ -1497,7 +1510,7 @@
 
         <div class="timeline">
 
-        <div class="timeline">
+          <div class="timeline">
           <!-- Engagement & Haldi -->
           <div class="timeline-item">
             <div class="timeline-icon">
@@ -1505,7 +1518,7 @@
             </div>
             <div class="timeline-content">
               <h3 class="event-title" data-translate="engagementHaldi">
-                Engagement & Haldi
+                Haldi
               </h3>
               <p class="event-date">Saturday, 29th November 2025</p>
               <p class="event-time">
@@ -1525,7 +1538,7 @@
                 Wedding Muhurt
               </h3>
               <p class="event-date">Sunday, 30th November 2025</p>
-              <p class="event-time"><i class="far fa-clock"></i> 6:00 AM</p>
+              <p class="event-time"><i class="far fa-clock"></i> 7:00 AM</p>
               <p class="event-location">
                 <strong data-translate="venueName">Shubharambh Celebration Lawn</strong><br />
                 <span data-translate="venueLocation">Ekodi Road, Sakoli</span>
@@ -1620,7 +1633,7 @@
           hostChildren: "Vi. Aditya, Sanskar, Ku. Samruddhi",
           weddingEvents: "Wedding Events",
           eventsSubtitle: "Join us in celebrating these precious moments",
-          engagementHaldi: "Engagement & Haldi",
+          engagementHaldi: "Haldi",
           event1Date: "Saturday, 29th November 2025",
           eveningCeremony: "Evening Ceremony",
           weddingMuhurt: "Wedding Muhurt",
@@ -1662,7 +1675,7 @@
           hostChildren: "वि. आदित्य, संस्कार, कु. समृद्धी",
           weddingEvents: "विवाह कार्यक्रम",
           eventsSubtitle: "या मंगल प्रसंगी आपण उपस्थित राहावे ही विनंती",
-          engagementHaldi: "साखरपुडा आणि हळदी",
+          engagementHaldi: "हळद",
           event1Date: "शनिवार, २९ नोव्हेंबर २०२५",
           eveningCeremony: "सायंकाळी कार्यक्रम",
           weddingMuhurt: "विवाह मुहूर्त",
