@@ -18,13 +18,13 @@
         /* fixed backgrounds can be problematic on mobile, use scroll */
         background-attachment: scroll;
         background-position: center top;
-        min-height: 70vh;
+        min-height: 60vh;
       }
       .hero-content {
         padding: 0 10px;
       }
       .hero .couple-names {
-        font-size: 6rem;
+        font-size: 3.5rem;
         margin: 1.5rem 0;
       }
       /* Hide large decorative overlay on mobile for clarity */
@@ -191,7 +191,7 @@
       }
 
       .invitation-text {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-bottom: 1.5rem;
         color: var(--light);
         font-weight: 300;
@@ -200,8 +200,8 @@
 
       .couple-names {
         font-family: "Great Vibes", cursive;
-        font-size: 6rem;
-        margin: 3rem 0;
+        font-size: 5rem;
+        margin: 1.5rem 0;
         color: var(--accent);
         text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
         animation: glow 2s ease-in-out infinite alternate;
@@ -222,8 +222,8 @@
       }
 
       .wedding-date {
-        font-size: 3rem;
-        margin: 2rem 0;
+        font-size: 2.5rem;
+        margin: 1rem 0;
         color: var(--light);
         font-family: "Playfair Display", serif;
         letter-spacing: 2px;
@@ -231,9 +231,9 @@
 
       .countdown {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         justify-content: center;
-        margin-top: 4rem;
+        margin-top: 2rem;
         flex-wrap: wrap;
       }
 
@@ -241,10 +241,10 @@
         background: rgba(255, 255, 255, 0.12);
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(10px);
-        padding: 2rem;
-        border-radius: 15px;
+        padding: 1.5rem;
+        border-radius: 12px;
         border: 1px solid rgba(201, 169, 110, 0.45);
-        min-width: 140px;
+        min-width: 120px;
         transition: var(--transition);
         position: relative;
         overflow: hidden;
@@ -316,7 +316,7 @@
 
       /* Section Styles */
       section {
-        padding: 6rem 0;
+        padding: 3rem 0;
         position: relative;
         background-attachment: fixed;
         background-size: cover;
@@ -341,9 +341,9 @@
 
       .section-title {
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 3rem;
         color: var(--primary);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-family: "Playfair Display", serif;
         font-weight: 700;
         position: relative;
@@ -364,9 +364,9 @@
 
       .section-subtitle {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--primary);
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         font-style: italic;
         opacity: 0.8;
       }
@@ -498,7 +498,7 @@
       }
 
       .couple-family {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--dark);
         line-height: 1.8;
         margin-top: 1.5rem;
@@ -516,7 +516,7 @@
         margin-top: 1.5rem;
         color: var(--primary);
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
 
       /* Welcome Section */
@@ -550,14 +550,14 @@
       }
 
       .welcome-title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: var(--primary);
         margin-bottom: 2rem;
         font-family: "Playfair Display", serif;
       }
 
       .welcome-names {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 2;
       }
 
@@ -699,7 +699,7 @@
       }
 
       .event-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: var(--primary);
         margin-bottom: 1.5rem;
         font-weight: 700;
@@ -723,7 +723,7 @@
       }
 
       .event-location {
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: #555;
         font-style: italic;
         line-height: 1.6;
@@ -864,7 +864,7 @@
       }
 
       .venue-address {
-        font-size: 3rem;
+        font-size: 2rem;
         color: white;;
         line-height: 1.8;
         margin-bottom: 2.5rem;
@@ -872,12 +872,12 @@
 
       .btn {
         display: inline-block;
-        padding: 1.2rem 3.5rem;
+        padding: 1rem 2rem;
         background: var(--maroon-gradient);
         color: white;
         text-decoration: none;
         border-radius: 50px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 600;
         transition: var(--transition);
         border: none;
@@ -1036,6 +1036,26 @@
         animation: fadeIn 0.5s ease;
       }
 
+      /* Footer Image */
+      .footer-image {
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .footer-image img {
+        max-width: 150px;
+        height: auto;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+        transform: translateY(-30%);
+        opacity: 0.85;
+        transition: all 0.3s ease;
+      }
+
+      .footer-image img:hover {
+        transform: translateY(-30%) scale(1.05);
+        opacity: 1;
+      }
+
       /* Footer */
       footer {
         background: var(--dark);
@@ -1058,7 +1078,7 @@
       }
 
       .footer-heading {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
         color: var(--accent);
       }
@@ -1178,6 +1198,115 @@
         }
       }
 
+      /* Mobile Optimizations */
+      @media screen and (max-width: 768px) {
+        /* Hero Section */
+        .hero-content {
+          padding: 0 15px;
+        }
+        .hero .couple-names {
+          font-size: 2.8rem;
+          margin: 1rem 0;
+        }
+        .invitation-text {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+        }
+        .hindi-title {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+        }
+        .wedding-date {
+          font-size: 2rem;
+          margin: 1rem 0;
+        }
+        .divine-symbol {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+        }
+        
+        /* General Section Adjustments */
+        section {
+          padding: 2.5rem 0;
+        }
+        .section-title {
+          font-size: 2.2rem;
+        }
+        .section-subtitle {
+          font-size: 1.1rem;
+          margin-bottom: 1.5rem;
+        }
+        
+        /* Countdown Section */
+        .countdown {
+          gap: 0.8rem;
+          margin-top: 1.5rem;
+        }
+        .countdown-item {
+          padding: 1rem;
+          min-width: 90px;
+        }
+        .countdown-number {
+          font-size: 2.5rem;
+        }
+        .countdown-label {
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+        }
+        
+        /* Couple Cards */
+        .couple-card {
+          padding: 1.5rem;
+          margin: 1rem 0;
+        }
+        .couple-name {
+          font-size: 2rem;
+        }
+        .couple-family {
+          font-size: 1rem;
+        }
+        
+        /* Timeline Events */
+        .timeline-content {
+          padding: 1.2rem;
+          margin: 0.8rem 0;
+        }
+        .event-title {
+          font-size: 1.3rem;
+        }
+        .event-date, 
+        .event-time {
+          font-size: 1.5rem;
+        }
+        
+        /* Venue Information */
+        .venue-card {
+          padding: 1.5rem;
+          margin: 1rem 0;
+        }
+        .venue-name {
+          font-size: 2rem;
+        }
+        .venue-address {
+          font-size: 1.5rem;
+        }
+        
+        /* Buttons and Interactive Elements */
+        .btn {
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
+        }
+        
+        /* Navigation and UI Elements */
+        .language-switcher {
+          padding: 3px;
+        }
+        .lang-btn {
+          padding: 6px 15px;
+          font-size: 0.9rem;
+        }
+      }
+
       @keyframes heartbeat {
         0%,
         100% {
@@ -1198,7 +1327,7 @@
         }
 
         .hindi-title {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
         }
 
         .wedding-date {
@@ -1240,7 +1369,7 @@
         }
 
         .couple-name {
-          font-size: 2.2rem;
+          font-size: 2rem;
         }
 
         .floral-decoration {
@@ -1451,6 +1580,9 @@
 
     <!-- Footer -->
     <footer>
+      <div class="footer-image">
+        <img src="assets/images/image7-removebg-preview.png" alt="Namaste Gesture">
+      </div>
       <div class="container">
         <div class="footer-content">
           <p class="footer-heading" data-translate="footerHeading">
@@ -1460,9 +1592,6 @@
             <span data-translate="madeWith">Made with</span>
             <span class="heart">❤️</span>
             <span data-translate="for">for</span> Nikhil & Vaishnavi
-          </p>
-          <p class="footer-copyright">
-            © 2025 | <span data-translate="allRights">All Rights Reserved</span>
           </p>
         </div>
       </div>
